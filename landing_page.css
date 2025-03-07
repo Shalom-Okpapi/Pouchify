@@ -271,9 +271,8 @@ section{
 }
 
 .video .content h1{
-    padding:1.5%;
+    margin: 2% 0;
     color:white;
-    text-align: center;
 }
 
 .video .content video{
