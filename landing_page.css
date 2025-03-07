@@ -298,7 +298,6 @@ section{
 /* Footer */
 
 footer{
-    padding:25px;
     background-color: var(--black);
     width:100%;
 }
@@ -311,7 +310,7 @@ footer .footer_links{
 
 footer .footer_links a{
     color:white;
-    padding:5px;
+    padding-top:2.4%;
 }
 
 footer .footer_links a:hover{
