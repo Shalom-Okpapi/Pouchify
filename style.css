@@ -175,9 +175,9 @@ section p{
 /* Footer */
 
 footer{
+    padding: 25px;
     background-color: var(--black);
     width:100%;
-    height: fit-content;
 }
 
 footer .footer_links{
