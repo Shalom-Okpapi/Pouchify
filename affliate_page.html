@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affliate Program</title>
+    <link rel="stylesheet" href="affliate.css">
+    <link rel="icon" href="img.png" type="image/x-icon">
+</head>
+<body>
+    
+    <header>
+           <!-- Hamburger Button -->
+        <button id="hamburger" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <aside id="sidebar" class="closed">
+                <ul>
+                    <a href="#">
+                        <li>
+                            <div class="img_div"><img src="all.jpg">
+                            </div>Power bank pouches</li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div class="img_div"><img src="t1.jpg">
+                            </div>Phone pouches</li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div class="img_div"><img src="ank.jpg">
+                            </div>Accessories</li>
+                        </a>
+                    <a href="#">
+                        <li>
+                            <div class="img_div"><img src="itel.jpg">
+                            </div>Coupons
+                        </li></a>
+                        <a href="#">
+                            <li>
+                                <div class="img_div"><img src="haw.jpg">
+                                </div>Refer & Earn</li>
+                            </a>
+                </ul>
+                
+                <div class="profile_link">
+                    <a href="#">
+                        <div class="img_div"><img src="itel.jpg">
+                        </div>
+                       <h1>Username/shopname</h1>
+                    </a>
+                </div>
+        </aside>
+
+        <div class="content">
+            <h1>Pouchify</h1>
+            <div class="img_container">
+                <img src="img.png">
+            </div>
+        </div>
+    </header>
+    
+    <main>
+
+        <!--First Section-->
+        <section class="first-section">
+        </section>
+        <!--Second Section-->
+        <section class="second-section">
+            <p>Welcome to our affliate program where earning a little cash has never been this easy! When we say 'little' we mean 'big'. Get $2 when you refer someone and they make a purchase above $15! Sweet, right!?</p>
+            <button>Generate referral link</button>
+        </section>
+        <!--Third Section-->
+        <section class="third-section">
+            <h1>How it works?</h1>
+            <div class="img_container">
+                <img src="">
+            </div>
+            <h3>Refer & Earn</h3>
+            <p>Share your referral link to others and get paid $2 when they make a purchase over $15.</p>
+            </div>
+            <h3>Withdrawal methods</h3>
+            <p>Withdraw your cash through:</p>
+            <ul>
+                <li><div class="img_container"><img src="haw.jpg"></div>Wire transfer</li>
+                <li><div class="img_container"><img src="ank.jpg"></div>Payoneer</li>
+                <li><div class="img_container"><img src="itel.jpg"></div>Grey</li>
+            </ul>
+        </section>
+    </main>  
+    
+            <!--Footer Section-->
+    <footer>
+            <nav class="footer_links">
+                <a href="about_page.html">About Us</a>
+                <a href="home_page.html">FAQ</a>
+                <a href="affliate_page.html">Refer & Earn</a>
+                <a href="index.html">Sell Your Art</a>
+                <a href="landing_page.html">Contact Us</a>
+            </nav>
+            <div class="subscribe_div">
+            <h2 style="color:#00c6ff;">NEWSLETTER & SPECIAL OFFERS</h2>
+            <form method="post">
+                <input type="email" placeholder="Enter email address">
+                <button>Subscribe</button>
+            </form>
+           </div>
+    <p style="color: rgba(255, 255, 255, 0.767); text-align: center; font-size: 11px; padding: 3% 4px;">©Pouchify. All Rights Reserved</p>
+        <div class="social_imgs">
+           <a href="#"> <img src="img.png"></a>
+           <a href="#"> <img src="img.png"></a>
+           <a href="#"> <img src="img.png"></a>
+           <a href="#"> <img src="img.png"></a>
+        </div>
+    </footer>
+</body>
+<!--Script-->
+<script>
+    //Hamburger BTN
+function toggleSidebar(event) {
+    const sidebar = document.getElementById('sidebar');
+    const hamburger = document.getElementById('hamburger');
+    sidebar.classList.toggle('active');
+    hamburger.classList.toggle('close');
+} 
+</script>
+</html>

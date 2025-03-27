@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about_page.css">
+    <link rel="icon" href="img.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        
+           <!-- Hamburger Button -->
+           <button id="hamburger" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <aside id="sidebar" class="closed">
+                <ul>
+                    <a href="#">
+                        <li>
+                            <div class="img_div"><img src="all.jpg">
+                            </div>Power bank pouches</li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div class="img_div"><img src="t1.jpg">
+                            </div>Phone pouches</li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div class="img_div"><img src="ank.jpg">
+                            </div>Accessories</li>
+                        </a>
+                    <a href="#">
+                        <li>
+                            <div class="img_div"><img src="itel.jpg">
+                            </div>Coupons
+                        </li></a>
+                        <a href="#">
+                            <li>
+                                <div class="img_div"><img src="haw.jpg">
+                                </div>Refer & Earn</li>
+                            </a>
+                </ul>
+                
+                <div class="profile_link">
+                    <a href="#">
+                        <div class="img_div"><img src="itel.jpg">
+                        </div>
+                       <h1>Username/shopname</h1>
+                    </a>
+                </div>
+        </aside>
+        <div class="content">
+            <h1>Pouchify</h1>
+            <div class="img_container">
+                <img src="img.png">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="first_section">
+            <p class="first_p">Who We Are</p>
+            <h1>Pouchify provides premium pouches that delivers Protection, Style, & Personalisation!</h1>
+         <div class="about_content">
+            <p>Founded by Shalom Okpapi, Pouchify was an idea that came out of the disatifaction on power bank pouches. "Not until Pouchify, power bank pouches were either boring, bulky, or lack functionality. I wanted more - I wanted protection, style, and personalisation. But the market offered no solution that combined all three. So I decided to make one for myself, now look at where we are." - Shalom Okpapi.</p>
+            <div class="img_container">
+                <img src="ank.jpg" alt="bg_image">
+            </div> 
+         </div>
+      </section>
+
+      <section class="second_section">
+        <p class="first_p">Our mission</p>
+        <h1>Protect. Style. Charge.</h1>
+        <div class="about_content">
+            <p>Founded by Shalom Okpapi, Pouchify was an idea that came out of the disatifaction on how vulnarable power banks were. <strong>"Not until Pouchify, power bank cases were either boring, bulky, or lack functionality. I wanted more - I wanted protection, style, and personalisation. But the market offered no solution that combined all three. So I decided to make one for myself, now look at where we are."</strong> - Shalom Okpapi.</p>
+            <div class="img_container">
+                <div class="item1">
+                <img src="t2.jpg" alt="bg_image">
+                </div>
+                <div class="item2">
+                <img src="t2.jpg" alt="bg_image">
+                </div>
+            </div> 
+         </div>
+      </section>
+
+      <section class="third_section">
+        <h1>Who can join?</h1>
+        <p>Anyone can join. And for free! We invite all from anywhere in the world to join and express themselves through their unique art and earn sweet cash. Or come explore our market place to find amazing art from our artists.</p>
+        <a href="index.html"><button>Join the fun</button></a>
+      </section>
+
+      <section class="fourth_section">
+        <div class="container">
+            <div class="item">
+                <img src="img.png" alt="product_image1">
+                <p>Worldwide shipping</p>
+            </div>
+            <div class="item">
+                <img src="img.png" alt="product_image1">
+                <p>Limted Warranty</p>
+            </div>
+            <div class="item">
+                <img src="img.png" alt="product_image1">
+                <p>Secure payments</p>
+            </div>
+            <div class="item">
+                <img src="img.png" alt="product_image1">
+                <p>Local support</p>
+            </div>
+        </div>
+    </section>
+    </main>  
+    
+            <!--Footer Section-->
+    <footer>
+            <nav class="footer_links">
+                <a href="about_page.html">About Us</a>
+                <a href="home_page.html">FAQ</a>
+                <a href="affliate_page.html">Refer & Earn</a>
+                <a href="index.html">Sell Your Art</a>
+                <a href="landing_page.html">Contact Us</a>
+            </nav>
+            <div class="subscribe_div">
+            <h2 style="color:#00c6ff;">NEWSLETTER & SPECIAL OFFERS</h2>
+            <form method="post">
+                <input type="email" placeholder="Enter email address">
+                <button>Subscribe</button>
+            </form>
+           </div>
+    <p style="color: rgba(255, 255, 255, 0.767); text-align: center; font-size: 11px; padding: 3% 4px;">©Pouchify. All Rights Reserved</p>
+        <div class="social_imgs">
+           <a href="#"> <img src="img.png"></a>
+           <a href="#"> <img src="img.png"></a>
+           <a href="#"> <img src="img.png"></a>
+           <a href="#"> <img src="img.png"></a>
+        </div>
+    </footer>
+</body>
+<!--Script-->
+<script>
+    //Hamburger BTN
+function toggleSidebar(event) {
+    const sidebar = document.getElementById('sidebar');
+    const hamburger = document.getElementById('hamburger');
+    sidebar.classList.toggle('active');
+    hamburger.classList.toggle('close');
+} 
+</script>
+</html>
