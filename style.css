@@ -1,0 +1,264 @@
+/* NOTE!!
+
+CHILD ELEMENTS MAY HAVE SAME NAMES BUT DIFFERENT PARENT NAMES. ALWAYS USE DECENDING CLASS SELECTORS TO SPECIFY AND TARGET THE CHILD SO THERE WOULDN'T BE AMBUIGITY AND CHAOS IN CODE!
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    font-family:'poppins',monospace;
+    padding:0;
+    margin:0;
+    border:none;
+    outline:none;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    transition: all 0.4s ease-in-out;
+}
+
+:root{
+    --main-color:#007acc;
+    --second-Main-color:#00c6ff;
+    --black:#07101b;
+    --green:#8bc34a;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+    height: .5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}       
+
+body{
+    color: var(--black); 
+    position:relative;
+    min-height: 100vh;
+    word-wrap: break-word;
+    line-height:1.6;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* General Section Setting */
+section{
+    padding:15px;
+}
+
+section p{
+    font-size:0.9em;
+    margin:5% 0;
+}
+
+section h1{
+    font-size:1.5em;
+}
+
+/* Intro Section */
+
+.intro-section .img_container{
+    margin:0 auto;
+    width:60px;
+}
+
+.intro-section .img_container img{
+    width:100%;
+    border-radius:30px;
+}
+
+.intro-section h1{
+    text-align: center;
+}
+
+.intro-section h1 span{
+    color:var(--main-color);
+}
+
+.intro-section h3{
+    margin:5% 0;
+    text-align: center;
+    font-size:1em;
+}
+
+/* Option Section */
+
+.opt-section {
+    display: flex;
+    justify-content: center;
+}
+
+.opt-section .opt-section_div{
+    border:1px solid var(--black);
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.opt-section .opt-section_div #img_container{
+    width:50px;
+    height:50px;
+    margin-left:10px;
+}
+
+.opt-section #img_container img{
+    width:100%;
+    height:100%;
+    border-radius:30px;
+}
+
+/* Form Section */
+
+.form-section{
+    text-align: center;
+}
+
+.form-section form input{
+    width:100%;
+    border-bottom:solid 1px var(--black);
+    padding:4px;
+    margin-bottom:8%;
+    font-size: 14px;
+    color:var(--black);
+}
+
+.form-section form button{
+    width:6cm;
+    padding:7px;
+    margin:4% 0;
+    font-size: 1em;
+    background-color: var(--black);  
+    color:white;
+    border-radius: 35px;
+    cursor:pointer;
+}
+
+.form-section form button:hover{
+    background-color: var(--green);
+}
+
+.form-section a{
+    color: var(--black); 
+    margin-top:3%;
+    font-size:0.9em;
+}
+
+.form-section #create_account, .form-section #forgot_password{
+    display:block;
+}
+
+.form-section a:hover {
+    color: var(--green);
+    text-decoration: underline;
+}
+
+/* Footer */
+
+ .footer {
+            background-color: var(--black);
+            color: #ddd;
+            padding: 40px 0;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .footer-column h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .footer-column li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-column a:hover {
+            color: white;
+        }
+
+.social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links img {
+            width: 50px;
+            height: 50px;
+            border-radius: 30px;
+        }
+
+.subscribe_div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:15px;
+}
+
+footer .subscribe_div h2{
+    font-size: 1.1rem;
+    color:#00c6ff;
+    padding:3% 0;
+}
+
+footer .subscribe_div form{
+    display:flex;
+    gap:1%;
+}
+
+footer .subscribe_div form input{
+    border-radius: 20px;
+    padding: 7px;
+    height:1cm;
+}
+
+footer .subscribe_div form button{
+    border-radius: 20px;
+    padding:7px;
+    cursor: pointer;
+    background-color: white;
+}
+
+footer .subscribe_div form button:hover{
+    background-color:var(--second-Main-color);
+}
+
+.copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }

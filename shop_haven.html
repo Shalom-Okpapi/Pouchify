@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Haven | Pouchify</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="shop_haven.css">
+  <link rel="icon" href="img.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        
+        <!-- Hamburger Button -->
+        <button id="hamburger" onclick="toggleSidebar()">
+         <span></span>
+         <span></span>
+         <span></span>
+     </button>
+     <aside id="sidebar" class="closed">
+             <ul>
+                 <a href="#">
+                     <li>
+                         <div class="img_div"><img src="all.jpg">
+                         </div>Power Bank Pouches</li>
+                 </a>
+                 <a href="#">
+                     <li>
+                         <div class="img_div"><img src="t1.jpg">
+                         </div>Phone Pouches</li>
+                 </a>
+                 <a href="#">
+                     <li>
+                         <div class="img_div"><img src="ank.jpg">
+                         </div>Accessories</li>
+                     </a>
+                 <a href="#">
+                     <li>
+                         <div class="img_div"><img src="itel.jpg">
+                         </div>Coupons
+                     </li></a>
+                     <a href="#">
+                         <li>
+                             <div class="img_div"><img src="haw.jpg">
+                             </div>Refer & Earn</li>
+                         </a>
+             </ul>       
+             
+              <!-- Centers' DIV -->
+                <div class="centers">
+                    <ul>
+                    <a href="return_center.html">
+                        <li> Return Center </li>
+                        </a>
+                    <a href="help_center_page.html">
+                        <li>Help Center</li>
+                        </a>
+                        <a href="device_help.html">
+                        <li>  Can't find my model</></li>
+                        </a>
+                        </ul>
+                </div>
+                
+             <div class="profile_link">
+                 <a href="how_it_works_page.html">
+                     <div class="img_div"><img src="itel.jpg">
+                     </div>
+                    <h1>Username/shopname</h1>
+                 </a>
+             </div>
+     </aside>
+     
+     <div class="right">
+
+         <!--Shop & Fav-->
+<div class="icon_links">
+ <a href="favorites_page.html"><img src="favorites.png"></a>
+ <a href="shopping_cart_page.html"><img src="white_cart.png"></a>
+</div>
+
+            <a href="home_page.html"><h1>Pouchify</h1></a>
+ <div class="img_container">
+     <img src="powerPP.jpg">
+ </div>
+</div>
+     
+         <!--Search Form-->
+         <div class="search_form_container">
+             <form method="post">
+                 <input type="text" placeholder="Search themes, products,...">
+                 <button type="submit"><i class="fas fa-search"></i></button>
+             </form>
+         </div>
+ </header>
+
+  <section>
+  <div class="banner">
+    <div>
+      <h2>Clearance Sales</h2>
+      <p>Up to 50%</p>
+    </div>
+    <img src="t2.jpg" alt="iPhone">
+  </div>
+  </section>
+  
+  <section>
+      
+ <div class="custom-dropdown">
+  <div class="dropdown-selected" onclick="toggleDropdown()">All Categories</div>
+  <ul class="dropdown-options">
+    <li data-value="all" onclick="selectCategory(this)">All</li>
+    <li data-value="smartphones" onclick="selectCategory(this)">Power Bank Pouches</li>
+    <li data-value="headphones" onclick="selectCategory(this)">Phone Pouches</li>
+    <li data-value="headphones" onclick="selectCategory(this)">Tablet Pouches</li>
+    <li data-value="laptops" onclick="selectCategory(this)">Accessories</li>
+  </ul>
+</div>
+
+
+  </section>
+  
+  <section>
+  <div class="products" id="product-list">
+    <!-- Products will be injected here -->
+  </div>
+  </section>
+  
+        <!-- Favorite Item 1 -->
+        <section class="first_section">
+            <h1>Power Bank Pouches</h1>
+
+            <div class="favorites-grid">
+                    <div class="favorite-item">
+                       <a href="#"><img src="t1.jpg" alt="Design" class="product-image"></a>
+                        <div class="product-info">
+                          <p class="product-title">Cosmic Cat Astronaut</p>
+                          <p class="artist-name">by SpaceArtist</p>
+                          <p class="price">$24.50</p>
+                        </div>
+                        <!-- Icons Row -->
+                        <div class="product-actions">
+                          <i class="fa-regular fa-heart icon heart" title="Add to Favorites"></i>
+                          <i class="fa-solid fa-cart-shopping icon cart" title="Add to Cart"></i>
+                        </div>
+                       </div>
+
+        <!-- Favorite Item 2 -->
+        <div class="favorite-item">
+            <a href=""><img src="t2.jpg" alt="Design" class="product-image"></a>
+            <div class="product-info">
+                <p class="product-title">Retro Sunset Waves</p>
+                <p class="artist-name">by VintageDreamer</p>
+                <p class="price">$19.99</p>
+            </div>
+            <!-- Icons Row -->
+  <div class="product-actions">
+  <i class="fa-regular fa-heart icon heart" title="Add to Favorites"></i>
+  <i class="fa-solid fa-cart-shopping icon cart" title="Add to Cart"></i>
+</div>
+        </div>
+
+        <!-- Favorite Item 3 -->
+        <div class="favorite-item">
+            <a href="#"><img src="t1.jpg" alt="Design" class="product-image"></a>
+            <div class="product-info">
+                <p class="product-title">Retro Sunset Waves</p>
+                <p class="artist-name">by VintageDreamer</p>
+                <p class="price">$19.99</p>
+            </div>
+            <!-- Icons Row -->
+  <div class="product-actions">
+  <i class="fa-regular fa-heart icon heart" title="Add to Favorites"></i>
+  <i class="fa-solid fa-cart-shopping icon cart" title="Add to Cart"></i>
+</div>
+        </div>
+        
+       <!-- Favorite Item 4 -->
+       <div class="favorite-item">
+  <a href="#"><img src="t2.jpg" alt="Design" class="product-image"></a>
+  <div class="product-info">
+    <p class="product-title">Retro Sunset Waves</p>
+    <p class="artist-name">by VintageDreamer</p>
+    <p class="price">$19.99</p>
+
+    <!-- Icons Row -->
+  <div class="product-actions">
+  <i class="fa-regular fa-heart icon heart" title="Add to Favorites"></i>
+  <i class="fa-solid fa-cart-shopping icon cart" title="Add to Cart"></i>
+</div>
+
+  </div>
+  </div>
+
+  <!-- Favorite Item 5 -->
+  <div class="favorite-item">
+    <a href="#"><img src="t1.jpg" alt="Design" class="product-image"></a>
+     <div class="product-info">
+       <p class="product-title">Cosmic Cat Astronaut</p>
+       <p class="artist-name">by SpaceArtist</p>
+       <p class="price">$24.50</p>
+     </div>
+     <!-- Icons Row -->
+     <div class="product-actions">
+       <i class="fa-regular fa-heart icon heart" title="Add to Favorites"></i>
+       <i class="fa-solid fa-cart-shopping icon cart" title="Add to Cart"></i>
+     </div>
+    </div>
+
+  <!-- Favorite Item 6 -->
+  <div class="favorite-item">
+    <a href="#"><img src="t1.jpg" alt="Design" class="product-image"></a>
+     <div class="product-info">
+       <p class="product-title">Cosmic Cat Astronaut</p>
+       <p class="artist-name">by SpaceArtist</p>
+       <p class="price">$24.50</p>
+     </div>
+     <!-- Icons Row -->
+     <div class="product-actions">
+       <i class="fa-regular fa-heart icon heart" title="Add to Favorites"></i>
+       <i class="fa-solid fa-cart-shopping icon cart" title="Add to Cart"></i>
+     </div>
+    </div>
+
+  <!-- Favorite Item 7 -->
+  <div class="favorite-item">
+    <a href="#"><img src="t1.jpg" alt="Design" class="product-image"></a>
+     <div class="product-info">
+       <p class="product-title">Cosmic Cat Astronaut</p>
+       <p class="artist-name">by SpaceArtist</p>
+       <p class="price">$24.50</p>
+     </div>
+     <!-- Icons Row -->
+     <div class="product-actions">
+       <i class="fa-regular fa-heart icon heart" title="Add to Favorites"></i>
+       <i class="fa-solid fa-cart-shopping icon cart" title="Add to Cart"></i>
+     </div>
+    </div>
+
+    <!-- Favorite Item 8 -->
+    <div class="favorite-item">
+      <a href="#"><img src="t2.jpg" alt="Design" class="product-image"></a>
+      <div class="product-info">
+        <p class="product-title">Retro Sunset Waves</p>
+        <p class="artist-name">by VintageDreamer</p>
+        <p class="price">$19.99</p>
+    
+        <!-- Icons Row -->
+      <div class="product-actions">
+      <i class="fa-regular fa-heart icon heart" title="Add to Favorites"></i>
+      <i class="fa-solid fa-cart-shopping icon cart" title="Add to Cart"></i>
+    </div>
+      </div>
+      </div>
+
+      <!-- Favorite Item 9 -->
+      <div class="favorite-item">
+        <a href="#"><img src="t2.jpg" alt="Design" class="product-image"></a>
+        <div class="product-info">
+          <p class="product-title">Retro Sunset Waves</p>
+          <p class="artist-name">by VintageDreamer</p>
+          <p class="price">$19.99</p>
+      
+          <!-- Icons Row -->
+        <div class="product-actions">
+        <i class="fa-regular fa-heart icon heart" title="Add to Favorites"></i>
+        <i class="fa-solid fa-cart-shopping icon cart" title="Add to Cart"></i>
+      </div>
+        </div>
+        </div>
+
+</div>
+
+  </section>
+  
+            <!--Footer Section-->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href=" shop_haven.html ">Power Bank Pouches</a></li>
+                    <li><a href="shop_haven.html">Stickers</a></li>
+                    <li><a href=" shop_haven.html">Phone Pouches</a></li>
+                    <li><a href=" shop_haven.html ">Tablet Pouches</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Sell</h3>
+                <ul>
+                    <li><a href="landing_page.html">Become an Artist</a></li>
+                    <li><a href="design_tips.html">Design Tips</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="about_page.html">Our Story</a></li>
+                    <li><a href="affiliate_page.html">Refer & Earn</a></li>
+                    <li><a href="home_page.html">Careers</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="help_center_page.html">Help Center</a></li>
+                    <li><a href="contact_page.html">Contact Us</a></li>
+                    <li><a href="legal.html">Privacy Policy</a></li>
+                    <li><a href="legal.html">User Agreements</a></li>
+                </ul>
+            </div>
+            
+            <!-- Social Column -->
+                            <div class="footer-column">
+                                <h3 class="footer-title">Socials</h3>
+                                <ul class="social-links">
+                                    <li><a href="#" aria-label="Instagram"><img src="ig.jpg" alt="Instagram"></a></li>
+                                    <li><a href="#" aria-label="Pinterest"><img src="pinterest.jpg" alt="Pinterest"></a></li>
+                                    <li><a href="#" aria-label="Facebook"><img src="fb.jpg" alt="Facebook"></a></li>
+                                    <li><a href="#" aria-label="Twitter"><img src="x.jpg" alt="Twitter"></a></li>
+                                </ul>
+                            </div>
+        </div>
+        
+         <div class="subscribe_div">
+            <h2>NEWSLETTER & SPECIAL OFFERS</h2>
+            <form method="post">
+                <input type="email" placeholder="Enter email address">
+                <button>Subscribe</button>
+            </form>
+           </div>
+        
+        <div class="copyright">
+            ©Pouchify. All Rights Reserved
+        </div>
+    </footer>
+    
+</body>
+<script>
+     //Hamburger BTN
+function toggleSidebar(event) {
+    const sidebar = document.getElementById('sidebar');
+    const hamburger = document.getElementById('hamburger');
+    sidebar.classList.toggle('active');
+    hamburger.classList.toggle('close');
+} 
+
+//Filter Function
+function toggleDropdown() {
+  document.querySelector('.custom-dropdown').classList.toggle('active');
+}
+
+function selectCategory(option) {
+  const value = option.getAttribute('data-value');
+  const label = option.innerText;
+
+  document.querySelector('.dropdown-selected').innerText = label;
+  document.querySelector('.custom-dropdown').classList.remove('active');
+
+  // Filter logic (adjust as needed)
+  const items = document.querySelectorAll(".favorite-item");
+  items.forEach(item => {
+    const category = item.getAttribute("data-category");
+    if (value === "all" || category === value) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+
+
+  </script>
+</html>

@@ -1,0 +1,273 @@
+<!--
+    CHILD ELEMENTS MAY HAVE SAME NAMES BUT DIFFERENT PARENT NAMES. ALWAYS USE DECENDING CLASS SELECTORS TO SPECIFY AND TARGET THE CHILD SO THERE WOULDN'T BE AMBUIGITY AND CHAOS IN CODE!
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pouchify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="landing_page.css">
+    <link rel="icon" href="img.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        
+           <!-- Hamburger Button -->
+           <button id="hamburger" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <aside id="sidebar" class="closed">
+                <ul>
+                    <a href="#">
+                        <li>
+                            <div class="img_div"><img src="all.jpg">
+                            </div>Power Bank Pouches</li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div class="img_div"><img src="t1.jpg">
+                            </div>Phone Pouches</li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div class="img_div"><img src="ank.jpg">
+                            </div>Accessories</li>
+                        </a>
+                    <a href="#">
+                        <li>
+                            <div class="img_div"><img src="itel.jpg">
+                            </div>Coupons
+                        </li></a>
+                        <a href="#">
+                            <li>
+                                <div class="img_div"><img src="haw.jpg">
+                                </div>Refer & Earn</li>
+                            </a>
+                </ul>
+                
+                 <!-- Centers' DIV -->
+                <div class="centers">
+                    <ul>
+                    <a href="return_center.html">
+                        <li> Return Center </li>
+                        </a>
+                    <a href="help_center_page.html">
+                        <li>Help Center</li>
+                        </a>
+                        <a href="device_help.html">
+                        <li>  Can't find my model</></li>
+                        </a>
+                        </ul>
+                </div>
+                
+                <div class="profile_link">
+                    <a href="how_it_works_page.html">
+                        <div class="img_div"><img src="itel.jpg">
+                        </div>
+                       <h1>Username/shopname</h1>
+                    </a>
+                </div>
+        </aside>
+        
+        <div class="right">
+
+            <!--Shop & Fav-->
+  <div class="icon_links">
+    <a href="favorites_page.html"><img src="favorites.png"></a>
+    <a href="shopping_cart_page.html"><img src="white_cart.png"></a>
+  </div>
+
+               <a href="home_page.html"><h1>Pouchify</h1></a>
+    <div class="img_container">
+        <img src="powerPP.jpg">
+    </div>
+</div>
+        
+            <!--Search Form-->
+            <div class="search_form_container">
+                <form method="post">
+                    <input type="text" placeholder="Search themes, products,...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+    </header>
+
+    <main>
+
+                <!--First Section-->
+        <section class="hero">
+            <div class="content">
+            <h1>Design. Sell. Earn!</h1>
+            <p>Create & sell your art printed on high-quality power bank pouches & phone pouches to a global audience. It's easy & fun. Let's get started!</p>
+
+            <a href="index.html"><button>Start Selling</button></a>
+            </div>
+            <div class="img_container">
+                <img src="hero_img.png">
+            </div>
+        </section>
+        <!--Second Section-->
+        <section class="how_it_works">
+            <h1>How <span style="color: #007acc;">Pouchify</span> Works</h1>
+            <div class="img_container">
+            <div class="content">
+                <img src="no_one.png">
+            <p>You upload your design to a product in your shop.</p>
+            </div>
+            <div class="content">
+                <img src="no_two.png">
+            <p>Customers find and order it.</p>
+            </div>
+            <div class="content">
+                <img src="no_three.png">
+            <p>We produce and ship your design.</p>
+            </div>
+            <div class="content">
+                <img src="no_four.png">
+            <p>Customers get an amazing product, and you get paid.</p>
+            </div>
+            </div>
+        </section>
+        <!--Third Section-->
+        <section class="artists">
+            <div class="left-content">
+                <h1>Join Thousands of Creative Artists</h1>
+                <p>Dive into our vibrant community of makers, dreamers, and creatives! By joining our marketplace, you'll become part of a supportive and inspiring network that celebrates individuality and self-expression. Share your art, watch your passions flourish, and earn sweet cash!</p>
+                <a href="index.html"><button>Start Selling</button></a>
+            </div>
+            <div class="right-content">
+                <div class="artists-container">
+                   <marquee direction="left" scrollamount="7">
+                    <img src="artist.jpg">
+                    <img src="artist.jpg">
+                    <img src="artist.jpg">
+                    <img src="artist.jpg">
+                    <img src="artist.jpg">
+                    <img src="artist.jpg">
+                   </marquee>
+                </div>
+            </div>
+        </section>
+        <!--Fourth Section-->
+        <section class="tiers">
+            <h1>Account Tiers</h1>
+            <div class="tiers_container">
+                <div class="tier">
+                    <h1 style="color:rgb(43, 226, 150);">Basic</h1>
+                    <p>Experience Pouchify Basic:</p>
+                    <p>+Your own shopfront ✔</p>
+                    <p>+Global shipping ✔</p>
+                    <p>+Verified ID ✔</p>
+                </div>
+                <div class="tier">
+                    <h1 style="color:blueviolet;">Premium</h1>
+                    <p>Experience Pouchify Premium:</p>
+                    <p>+Get featured ✔</p>
+                    <p>+Full control over pricing ✔</p>
+                    <p>+Dedicated customer support ✔</p>
+                </div>
+            </div>
+        </section>
+        <!--Fith Section-->
+        <section class="video">
+            <div class="content">
+                <h1>Protect. Charge. Style.</h1>
+                <div class="videos">
+                   <video controls loop>
+                      <source src="pouchify vid.mp4">
+                   </video>
+                   <video controls loop>
+                      <source src="phone case video.mp4">
+                   </video>
+                   <video controls loop>
+                      <source src="pouchify vid.mp4">
+                   </video>
+                </div>
+                <a href="index.html"><button>Ready To Begin?</button></a>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer Section-->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href=" shop_haven.html ">Power Bank Pouches</a></li>
+                    <li><a href="shop_haven.html">Stickers</a></li>
+                    <li><a href=" shop_haven.html">Phone Pouches</a></li>
+                    <li><a href=" shop_haven.html ">Tablet Pouches</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Sell</h3>
+                <ul>
+                    <li><a href="landing_page.html">Become an Artist</a></li>
+                    <li><a href="design_tips.html">Design Tips</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="about_page.html">Our Story</a></li>
+                    <li><a href="affiliate_page.html">Refer & Earn</a></li>
+                    <li><a href="home_page.html">Careers</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="help_center_page.html">Help Center</a></li>
+                    <li><a href="contact_page.html">Contact Us</a></li>
+                    <li><a href="legal.html">Privacy Policy</a></li>
+                    <li><a href="legal.html">User Agreements</a></li>
+                </ul>
+            </div>
+            
+            <!-- Social Column -->
+                            <div class="footer-column">
+                                <h3 class="footer-title">Socials</h3>
+                                <ul class="social-links">
+                                    <li><a href="#" aria-label="Instagram"><img src="ig.jpg" alt="Instagram"></a></li>
+                                    <li><a href="#" aria-label="Pinterest"><img src="pinterest.jpg" alt="Pinterest"></a></li>
+                                    <li><a href="#" aria-label="Facebook"><img src="fb.jpg" alt="Facebook"></a></li>
+                                    <li><a href="#" aria-label="Twitter"><img src="x.jpg" alt="Twitter"></a></li>
+                                </ul>
+                            </div>
+        </div>
+        
+         <div class="subscribe_div">
+            <h2>NEWSLETTER & SPECIAL OFFERS</h2>
+            <form method="post">
+                <input type="email" placeholder="Enter email address">
+                <button>Subscribe</button>
+            </form>
+           </div>
+        
+        <div class="copyright">
+            ©Pouchify. All Rights Reserved
+        </div>
+    </footer>
+    
+</body>
+
+<script>
+    //Hamburger BTN
+function toggleSidebar(event) {
+    const sidebar = document.getElementById('sidebar');
+    const hamburger = document.getElementById('hamburger');
+    sidebar.classList.toggle('active');
+    hamburger.classList.toggle('close');
+} 
+</script>
+</html>

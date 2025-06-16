@@ -1,0 +1,380 @@
+</><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Can't find your device model? Let us know and we'll add it to our collection. Submit your request for phone cases, power banks, or other accessories.">
+    <title>Can't Find My Model | Pouchify</title>
+    <link rel="stylesheet" href="device_help.css">
+    
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Can't Find My Device Model",
+      "description": "Request missing device models for Redbubble cases and accessories",
+      "url": "https://www.redbubble.com/missing-model",
+      "potentialAction": {
+        "@type": "ContactAction",
+        "description": "Request new device model"
+      }
+    }
+    </script>
+    
+    
+</head>
+<body>
+    <header class="article-header">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="help_center_page.html">Help Center</a> &rsaquo; Can't Find My Model
+            </nav>
+            <h1>Can't Find Your Device Model?</h1>
+            <p class="article-intro">We're constantly adding new devices. Let us know what's missing and we'll work to add it to our collection.</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="model-content">
+            <aside class="model-sidebar" aria-labelledby="sidebar-heading">
+                <h2 id="sidebar-heading">Quick Links</h2>
+                <ul>
+                    <li><a href="#request-form">Request a Model</a></li>
+                    <li><a href="#process">Our Process</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                
+                <h2 style="margin-top: 2rem;">Popular Models</h2>
+                <p style="font-size: 0.9rem;">Recently added devices:</p>
+                <ul>
+                    <li>iPhone 15 Series</li>
+                    <li>Samsung Galaxy S23</li>
+                    <li>Google Pixel 8</li>
+                    <li>Anker PowerCore 20K</li>
+                    <li>Sony WH-1000XM5</li>
+                </ul>
+            </aside>
+            
+            <div class="model-main">
+                <!-- Form Status Alert (hidden by default) -->
+                <div id="formAlert" class="alert" style="display: none;"></div>
+                
+                <section id="request-form">
+                    <h2>Request a Missing Model</h2>
+                    <p>Fill out this form to request your device model for a pouch</p>
+                    
+                    <form id="modelForm" class="model-form">
+                        <div class="form-group">
+                            <label for="deviceType" class="form-label required">Device Type</label>
+                            <select id="deviceType" class="form-control form-select" required>
+                                <option value="" selected disabled>Select device type</option>
+                                <option value="phone">Smartphone</option>
+                                <option value="tablet">Tablet</option>
+                                <option value="powerbank">Power Bank</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="brand" class="form-label required">Brand</label>
+                            <input type="text" id="brand" class="form-control" placeholder="e.g. Samsung, Anker, Apple" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="model" class="form-label required">Model Name/Number</label>
+                            <input type="text" id="model" class="form-control" placeholder="e.g. iPhone 14 Pro Max, PowerCore 26800" required>
+                            <p class="form-help">Please include the full model number if known</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="year" class="form-label">Release Year</label>
+                            <input type="number" id="year" class="form-control" placeholder="e.g. 2023" min="2000" max="2030">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="dimensions" class="form-label">Dimensions (optional)</label>
+                            <input type="text" id="dimensions" class="form-control" placeholder="Height × Width × Depth in inches/mm">
+                            <p class="form-help">Helpful for pouches and sleeves</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="photos" class="form-label">Reference Photos</label>
+                            <input type="file" id="photos" class="form-control" accept="image/*" multiple>
+                            <p class="form-help">Upload images showing the device (max 5MB total)</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="notes" class="form-label">Additional Notes</label>
+                            <textarea id="notes" class="form-control" placeholder="Any special features we should consider?"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label required">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="your@email.com" required>
+                            <p class="form-help">We'll notify you immediately we can.</p>
+                        </div>
+                        
+                        <div class="callout warning">
+                            <h3>Before You Submit</h3>
+                            <ul>
+                                <li>Check if your model exists under a different name</li>
+                                <li>Generic cases may fit similar-sized devices</li>
+                                <li>Processing time: 1-2 weeks depending on demand</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="form-group" style="margin-top: 2rem;">
+                            <button type="submit" class="btn btn-block">Submit Request</button>
+                        </div>
+                    </form>
+                </section>
+                
+                <div class="method-card">
+                        <h3>Note</h3>
+                        <p> It's possible to get your device's pouch without us adding it to our models.</p>
+                    </div>
+                
+                <section id="process">
+                    <h2>Our Model Addition Process</h2>
+                    <p>Here's how we evaluate and add new device models:</p>
+                    
+                    <div class="status-indicators">
+                        <div class="status-card">
+                            <h3>1. Request Submission</h3>
+                            <p>You submit details about your missing model</p>
+                        </div>
+                        <div class="status-card">
+                            <h3>2. Demand Evaluation</h3>
+                            <p>We assess how many requests we get for each model</p>
+                        </div>
+                        <div class="status-card">
+                            <h3>3. Sourcing</h3>
+                            <p>We acquire the device for precise measurements</p>
+                        </div>
+                        <div class="status-card">
+                            <h3>4. Product Creation</h3>
+                            <p>Design templates are created for the new model</p>
+                        </div>
+                        <div class="status-card">
+                            <h3>5. Quality Testing</h3>
+                            <p>Test prints ensure perfect fit before launch</p>
+                        </div>
+                    </div>
+                    
+                    <div class="callout">
+                        <h3>Prioritization Factors</h3>
+                        <p>We prioritize models based on:</p>
+                        <ul>
+                            <li><strong>Popularity:</strong> Number of requests received</li>
+                            <li><strong>Market Share:</strong> How widely used the device is</li>
+                            <li><strong>Feasibility:</strong> Ability to create a quality product</li>
+                            <li><strong>Release Date:</strong> Newer devices get priority</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section id="faq" class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">How long does it take to add a new model?</h3>
+                        <div class="faq-answer">
+                            <p>Typical timelines:</p>
+                            <ul>
+                                <li><strong>Popular new phones:</strong> 2-4 weeks after release</li>
+                                <li><strong>Requested models:</strong> 4-8 weeks after reaching threshold</li>
+                                <li><strong>Niche devices:</strong> May take longer or be grouped with similar sizes</li>
+                            </ul>
+                            <p>We'll email you when your requested model becomes available.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Can I get notified when my model is added?</h3>
+                        <div class="faq-answer">
+                            <p>Yes! When you submit a request:</p>
+                            <ol>
+                                <li>We add you to our notification list</li>
+                                <li>You'll receive an email when the model launches</li>
+                                <li>The email includes a special discount for your first order</li>
+                            </ol>
+                            <p>Make sure to provide an active email address.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">What if I need a case urgently?</h3>
+                        <div class="faq-answer">
+                            <p>For immediate needs:</p>
+                            <ul>
+                                <li>Check for universal cases that might fit</li>
+                                <li>Look for similar-sized models from the same brand</li>
+                                <li>Consider sleeves or pouches instead of form-fitting cases</li>
+                                <li>Contact support for personalized recommendations</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do you add older device models?</h3>
+                        <div class="faq-answer">
+                            <p>Our policy on older devices:</p>
+                            <ul>
+                                <li><strong>0-3 years old:</strong> Regular addition process</li>
+                                <li><strong>3-5 years old:</strong> Added if we receive enough requests</li>
+                                <li><strong>5+ years old:</strong> Rarely added unless exceptional demand</li>
+                            </ul>
+                            <p>For vintage devices, consider custom orders or universal cases.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <footer class="article-footer">
+                    <div class="feedback-section">
+                        <p>Was this helpful?</p>
+                        <button class="feedback-button helpful">Yes</button>
+                        <button class="feedback-button unhelpful">No</button>
+                    </div>
+                    
+                    <div class="related-articles">
+                        <h2>Related Articles</h2>
+                        <ul>
+                            <li><a href="account_help.html">Account Help</a></li>
+                            <li><a href="discounts_and_promotions.html">Discounts and Promotions</a></li>
+                            <li><a href="order_status_page.html">Track Order</a></li>
+                            <li><a href="shipping_info_page.html">Shipping Information</a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        // Form submission with validation
+        document.addEventListener('DOMContentLoaded', function() {
+            const modelForm = document.getElementById('modelForm');
+            const formAlert = document.getElementById('formAlert');
+            
+            if (modelForm) {
+                modelForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Validate required fields
+                    const deviceType = document.getElementById('deviceType');
+                    const brand = document.getElementById('brand');
+                    const model = document.getElementById('model');
+                    const email = document.getElementById('email');
+                    
+                    let isValid = true;
+                    
+                    // Reset form styles
+                    [deviceType, brand, model, email].forEach(field => {
+                        field.style.borderColor = '';
+                    });
+                    
+                    // Validate fields
+                    if (!deviceType.value) {
+                        deviceType.style.borderColor = 'var(--error-color)';
+                        isValid = false;
+                    }
+                    
+                    if (!brand.value) {
+                        brand.style.borderColor = 'var(--error-color)';
+                        isValid = false;
+                    }
+                    
+                    if (!model.value) {
+                        model.style.borderColor = 'var(--error-color)';
+                        isValid = false;
+                    }
+                    
+                    if (!email.value || !/^\S+@\S+\.\S+$/.test(email.value)) {
+                        email.style.borderColor = 'var(--error-color)';
+                        isValid = false;
+                    }
+                    
+                    if (!isValid) {
+                        formAlert.textContent = 'Please fill in all required fields correctly.';
+                        formAlert.className = 'alert alert-error';
+                        formAlert.style.display = 'block';
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                        return;
+                    }
+                    
+                    // Simulate form submission
+                    formAlert.textContent = 'Your model request has been submitted! We\'ll email you when ' + brand.value + ' ' + model.value + ' becomes available.';
+                    formAlert.className = 'alert alert-success';
+                    formAlert.style.display = 'block';
+                    
+                    // Reset form
+                    modelForm.reset();
+                    
+                    // Scroll to alert
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    
+                    // In a real implementation, you would send the form data to your backend here
+                    console.log('Model request submitted:', {
+                        deviceType: deviceType.value,
+                        brand: brand.value,
+                        model: model.value,
+                        year: document.getElementById('year').value,
+                        email: email.value
+                    });
+                });
+            }
+            
+             // Feedback buttons
+                const feedbackButtons = document.querySelectorAll('.feedback-button');
+                feedbackButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        // In a real implementation, this would send to analytics/backend
+                        feedbackButtons.forEach(btn => {
+                            btn.disabled = true;
+                            btn.style.opacity = '0.7';
+                        });
+                        
+                        this.style.fontWeight = 'bold';
+                        console.log('Feedback submitted:', this.textContent);
+                        
+                        // Show temporary thank you message
+                        const thankYou = document.createElement('p');
+                        thankYou.textContent = 'Thank you for your feedback!';
+                        thankYou.style.marginTop = '10px';
+                        thankYou.style.color = 'var(--success-color)';
+                        this.parentNode.appendChild(thankYou);
+                    });
+                });
+            
+            // FAQ toggles
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const isExpanded = question.getAttribute('aria-expanded') === 'true';
+                    
+                    // Toggle visibility
+                    question.setAttribute('aria-expanded', !isExpanded);
+                    answer.style.display = isExpanded ? 'none' : 'block';
+                });
+                
+                // Initialize
+                question.setAttribute('aria-expanded', 'false');
+                question.nextElementSibling.style.display = 'none';
+                question.setAttribute('role', 'button');
+                question.setAttribute('tabindex', '0');
+            });
+            
+            // Add keyboard support for FAQ items
+            faqQuestions.forEach(question => {
+                question.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        question.click();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

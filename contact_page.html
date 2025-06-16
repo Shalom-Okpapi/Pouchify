@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Redbubble Support for help with orders, accounts, or artist issues. Submit your request through our secure form.">
+    <title>Contact Support | Pouchify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="contact_page.css">
+    <link rel="icon" href="img.png" type="image/x-icon">
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Redbubble Support",
+      "description": "Contact form for Redbubble customer and artist support",
+      "url": "https://www.redbubble.com/contact",
+      "potentialAction": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "support@redbubble.com",
+        "availableLanguage": "English"
+      }
+    }
+    </script>
+    
+</head>
+<body>
+    <header class="article-header">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="help_center_page.html">Help Center</a> &rsaquo; Contact Support
+            </nav>
+            <h1>Contact Pouchify Support</h1>
+            <p class="article-intro">Need help with an order, account, or artist issue? Fill out the form below and our team will get back to you.</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="contact-content">
+            <aside class="contact-sidebar" aria-labelledby="sidebar-heading">
+                <h2 id="sidebar-heading">Before You Contact Us</h2>
+                <p style="font-size: 0.9rem; margin-bottom: 1rem;">Many questions can be answered in our<a href="help_center_page.html" style="color:#007acc ;">Help Center:</a></p>
+                <ul>
+                    <li><a href="order_status_page.html">Order Status</a></li>
+                    <li><a href="returns_and_exchanges.html">Returns & Exchanges</a></li>
+                    <li><a href="payment_options.html">Payment Issues</a></li>
+                    <li><a href="account_help.html">Account Problems</a></li>
+                    <li><a href="getting_started.html">Artist Guidelines</a></li>
+                </ul>
+                
+                <h2 style="margin-top: 2rem;">Average Response Times</h2>
+                <ul>
+                    <li><strong>Order Issues:</strong> 24-48 hours</li>
+                    <li><strong>Account Help:</strong> 48 hours</li>
+                    <li><strong>Artist Support:</strong> 72 hours</li>
+                    <li><strong>Copyright Claims:</strong> 5-7 days</li>
+                </ul>
+            </aside>
+            
+            <div class="contact-main">
+                <!-- Form Status Alert (hidden by default) -->
+                <div id="formAlert" class="alert" style="display: none;"></div>
+                
+                <form id="supportForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="issueType" class="form-label required">What do you need help with?</label>
+                        <select id="issueType" class="form-control form-select" required>
+                            <option value="" selected disabled>Select an option</option>
+                            <option value="order">Order Status or Problem</option>
+                            <option value="shipping">Shipping or Delivery</option>
+                            <option value="return">Returns or Refunds</option>
+                            <option value="account">Account or Login</option>
+                            <option value="payment">Payment or Billing</option>
+                            <option value="artist">Artist Account/Uploads</option>
+                            <option value="copyright">Copyright or Trademark</option>
+                            <option value="other">Something Else</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="orderNumber" class="form-label">Order Number (if applicable)</label>
+                        <input type="text" id="orderNumber" class="form-control" placeholder="RB-XXXX-XXXX">
+                        <p class="form-help">Find this in your order confirmation email</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label required">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="your@email.com" required>
+                        <p class="form-help">We'll send responses to this address</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" class="form-label required">Subject</label>
+                        <input type="text" id="subject" class="form-control" placeholder="Brief description of your issue" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description" class="form-label required">Description</label>
+                        <textarea id="description" class="form-control" placeholder="Please provide details about your issue..." required></textarea>
+                        <p class="form-help">Include any error messages, dates, and steps to reproduce</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="attachments" class="form-label">Attachments</label>
+                        <input type="file" id="attachments" class="form-control" multiple>
+                        <p class="form-help">Upload screenshots or documents (max 5MB total)</p>
+                    </div>
+                    
+                    <div class="form-group" style="margin-top: 2rem;">
+                        <button type="submit" class="btn btn-block">Submit Request</button>
+                    </div>
+                </form>
+                
+                <section class="contact-methods">
+                    <div class="method-card">
+                        <h3>📧 Email Support</h3>
+                        <p><strong>Customers:</strong> <a href="mailto:support@pouchify.com">support@pouchify.com</a></p>
+                        <p><strong>Artists:</strong> <a href="mailto:artists@pouchify.com">artists@pouchify.com</a></p>
+                        <p><strong>Copyright:</strong> <a href="mailto:copyright@pouchify.com">copyright@pouchify.com</a></p>
+                    </div>
+                    
+                    <div class="method-card">
+                        <h3>🌍 Regional Support</h3>
+                        <p><strong>Nigeria:</strong> +234 (091) 733-2288</p>
+                        <p><strong>US/Canada:</strong> +1 (855) 733-2288</p>
+                        <p><strong>UK:</strong> +44 (0)20 3868 8740</p>
+                        <p><strong>Australia:</strong> +61 (0)3 9028 5388</p>
+                        <p><small>Phone hours: Mon-Fri, 9am-5pm local time</small></p>
+                    </div>
+                </section>
+                
+                <section class="faq-section">
+                    <h2>Common Solutions</h2>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">How do I track my order?</h3>
+                        <div class="faq-answer">
+                            <p>You can track your order by:</p>
+                            <ol>
+                                <li>Logging into your Pouchify account</li>
+                                <li>Going to "Order History"</li>
+                                <li>Clicking "Track Package" next to your order</li>
+                            </ol>
+                            <p>Tracking information is usually available within 3-5 business days after ordering.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Why was my design removed?</h3>
+                        <div class="faq-answer">
+                            <p>Common reasons for design removal include:</p>
+                            <ul>
+                                <li>Copyright or trademark infringement</li>
+                                <li>Prohibited content violations</li>
+                                <li>Low quality or misaligned artwork</li>
+                            </ul>
+                            <p>You'll receive an email explaining any removals with instructions for appeal if applicable.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <footer class="article-footer">
+                    <div class="related-articles">
+                        <h2>Popular Help Articles</h2>
+                        <ul>
+                            <li><a href="order_status_page.html">Track Your Order</a></li>
+                           <li><a href="selling_on_pouchify.html">Selling on Pouchify</a></li>
+                            <li><a href="product_questions.html">Product Questions</a></li>
+                            <li><a href="design_tips.html">Design Tips</a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        // Form submission with validation
+        document.addEventListener('DOMContentLoaded', function() {
+            const supportForm = document.getElementById('supportForm');
+            const formAlert = document.getElementById('formAlert');
+            
+            if (supportForm) {
+                supportForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Validate required fields
+                    const issueType = document.getElementById('issueType');
+                    const email = document.getElementById('email');
+                    const subject = document.getElementById('subject');
+                    const description = document.getElementById('description');
+                    
+                    let isValid = true;
+                    
+                    // Reset form styles
+                    [issueType, email, subject, description].forEach(field => {
+                        field.style.borderColor = '';
+                    });
+                    
+                    // Validate fields
+                    if (!issueType.value) {
+                        issueType.style.borderColor = 'var(--error-color)';
+                        isValid = false;
+                    }
+                    
+                    if (!email.value || !/^\S+@\S+\.\S+$/.test(email.value)) {
+                        email.style.borderColor = 'var(--error-color)';
+                        isValid = false;
+                    }
+                    
+                    if (!subject.value) {
+                        subject.style.borderColor = 'var(--error-color)';
+                        isValid = false;
+                    }
+                    
+                    if (!description.value) {
+                        description.style.borderColor = 'var(--error-color)';
+                        isValid = false;
+                    }
+                    
+                    if (!isValid) {
+                        formAlert.textContent = 'Please fill in all required fields correctly.';
+                        formAlert.className = 'alert alert-error';
+                        formAlert.style.display = 'block';
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                        return;
+                    }
+                    
+                    // Simulate form submission
+                    formAlert.textContent = 'Your support request has been submitted successfully! We\'ll respond within 48 hours.';
+                    formAlert.className = 'alert alert-success';
+                    formAlert.style.display = 'block';
+                    
+                    // Reset form
+                    supportForm.reset();
+                    
+                    // Scroll to alert
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    
+                    // In a real implementation, you would send the form data to your backend here
+                    console.log('Form submitted:', {
+                        issueType: issueType.value,
+                        orderNumber: document.getElementById('orderNumber').value,
+                        email: email.value,
+                        subject: subject.value,
+                        description: description.value
+                    });
+                });
+            }
+            
+            // FAQ toggles
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const isExpanded = question.getAttribute('aria-expanded') === 'true';
+                    
+                    // Toggle visibility
+                    question.setAttribute('aria-expanded', !isExpanded);
+                    answer.style.display = isExpanded ? 'none' : 'block';
+                });
+                
+                // Initialize
+                question.setAttribute('aria-expanded', 'false');
+                question.nextElementSibling.style.display = 'none';
+                question.setAttribute('role', 'button');
+                question.setAttribute('tabindex', '0');
+            });
+            
+            // Add keyboard support for FAQ items
+            faqQuestions.forEach(question => {
+                question.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        question.click();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

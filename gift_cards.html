@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pouchify Gift Cards | Pouchify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="gift_cards.css">
+    <link rel="icon" href="img.png" type="image/x-icon">
+</head>
+<body>
+    <header class="article-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="#">Help Center</a> &rsaquo; <a href="#">Shopping Help</a> &rsaquo; Gift Cards
+            </div>
+            <h1>Pouchify Gift Cards</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="article-content">
+            <aside class="toc">
+                <h2>On this page</h2>
+                <ul>
+                    <li><a href="#purchasing">Purchasing Gift Cards</a></li>
+                    <li><a href="#redeeming">Redeeming Gift Cards</a></li>
+                    <li><a href="#troubleshooting">Troubleshooting</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </aside>
+
+            <main class="article-main">
+                <p class="article-intro">Pouchify gift cards let you share independent art with friends and family. They're delivered via email and can be used to purchase any product on Pouchify.</p>
+
+                <div class="alert-box">
+                    <strong>Important:</strong> Gift cards are non-refundable and can only be used in the currency they were purchased in.
+                </div>
+
+                <section id="purchasing">
+                    <h2>Purchasing Gift Cards</h2>
+                    <p>Pouchify offers digital gift cards in several currencies:</p>
+                    
+                    <div class="status-indicators">
+                        <div class="status-card">
+                            <h3>Available Currencies</h3>
+                            <p>USD, NGN, AUD, EUR, GBP, and CAD</p>
+                        </div>
+                        <div class="status-card">
+                            <h3>Delivery Method</h3>
+                            <p>Email only (no physical cards available)</p>
+                        </div>
+                    </div>
+                    
+                    <p>To purchase a gift card:</p>
+                    <ol>
+                        <li>Visit the Pouchify gift card page</li>
+                        <li>Select the amount and currency</li>
+                        <li>Enter the recipient's email and a custom message</li>
+                        <li>Complete your payment</li>
+                    </ol>
+                    
+                    <a href="#" class="btn btn-primary">Buy a Gift Card</a>
+                </section>
+
+                <section id="redeeming">
+                    <h2>Redeeming Gift Cards</h2>
+                    <p>Redeeming your gift card is easy:</p>
+                    
+                    <div class="steps">
+                        <div class="step">
+                            <h3>Add Items to Your Cart</h3>
+                            <p>Browse Pouchify and add products to your cart as usual.</p>
+                        </div>
+                        <div class="step">
+                            <h3>Enter Your Gift Card Code</h3>
+                            <p>At checkout, look for the "Gift Card" field under payment methods and enter your code.</p>
+                        </div>
+                        <div class="step">
+                            <h3>Complete Your Order</h3>
+                            <p>If your gift card covers the full amount, submit your order. For partial payments, enter another payment method for the remaining balance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="alert-box">
+                        <strong>Note:</strong> Gift cards can't be combined with promo codes in the same order.
+                    </div>
+                </section>
+
+                <section id="troubleshooting">
+                    <h2>Troubleshooting</h2>
+                    <p>Common issues and solutions:</p>
+                    
+                    <div class="status-indicators">
+                        <div class="status-card">
+                            <h3>Invalid Code</h3>
+                            <p>Check for typos and try again.</p>
+                        </div>
+                        <div class="status-card">
+                            <h3>Missing Email</h3>
+                            <p>Check your spam folder. If lost, contact the sender as Pouchify can't resend gift card emails.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="faq" class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Can I use a gift card internationally?</div>
+                        <div class="faq-answer">
+                            <p>No! Gift cards on Pouchify only be used in the currency they were purchased in.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What if my gift card doesn't cover the full order amount?</div>
+                        <div class="faq-answer">
+                            <p>You'll need to pay the remaining balance with another payment method. Unfortunately, Pouchify doesn't allow splitting payment between multiple gift cards.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Do gift cards expire?</div>
+                        <div class="faq-answer">
+                            <p>No, Pouchify gift cards don't have an expiration date. However, local laws in some regions may enforce limits on gift card validity.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="related-articles">
+                    <h2>Related Articles</h2>
+                    <ul>
+                        <li><a href="payment_options.html">Payment Methods Accepted</a></li>
+                        <li><a href="product_questions.html">Product Questions</a></li>
+                        <li><a href="order_status_page.html">How to Track Your Order</a></li>
+                    </ul>
+                </div>
+
+                <div class="article-footer">
+                    <div class="feedback-section">
+                        <p>Was this article helpful?</p>
+                        <button class="feedback-button helpful">Yes</button>
+                        <button class="feedback-button unhelpful">No</button>
+                    </div>
+                    <a href="contact_page.html" class="btn btn-primary">Contact Support</a>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                question.classList.toggle('active');
+                answer.classList.toggle('active');
+            });
+        });
+        
+        // Feedback buttons
+        document.querySelectorAll('.feedback-button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Thank you for your feedback!');
+            });
+        });
+        
+        // Update TOC active state on scroll
+        const sections = document.querySelectorAll('section');
+        const tocLinks = document.querySelectorAll('.toc a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

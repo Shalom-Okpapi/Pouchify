@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Profile Editor | Pouchify</title>
+    <link rel="stylesheet" href="edit_profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="banner">
+                <img id="banner-img" src="artist.jpg" alt="Banner">
+                <button id="change-banner"><i class="fas fa-camera"></i> Edit</button>
+            </div>
+            <div class="profile-pic">
+                <img id="avatar-img" src="artist.jpg" alt="Profile Picture">
+                <button id="change-avatar"><i class="fas fa-camera"></i> Edit</button>
+            </div>
+            <h1 class="username">
+                <input type="text" id="display-name" value="Shalom Okpapi"> <!-- Editable -->
+            </h1>
+            <p class="shop-name">Shop: <span>@ArtByShalom</span></p> <!-- Non-editable -->
+        </div>
+
+        <div class="profile-form">
+            <form id="profile-form">
+                <div class="form-group">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio">Digital artist and designer. My Art is an EXPLOSION 💥🤭!</textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Social Links</label>
+                    <div class="social-link">
+                        <i class="fab fa-instagram"></i>
+                        <input type="url" placeholder="Instagram URL" value="https://instagram.com/artbyshalom">
+                    </div>
+                    <div class="social-link">
+                        <i class="fab fa-x"></i>
+                        <input type="url" placeholder="X URL" value="https://x.com/artbyshalom">
+                    </div>
+                    <div class="social-link">
+                        <i class="fas fa-globe"></i>
+                        <input type="url" placeholder="Website" value="https://artbyshalom.com">
+                    </div>
+                </div>
+                
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Mock avatar/banner upload
+    document.getElementById('change-avatar').addEventListener('click', function(e) {
+        e.preventDefault();
+        const newAvatarUrl = prompt('Enter new avatar URL:', 'https://via.placeholder.com/150');
+        if (newAvatarUrl) document.getElementById('avatar-img').src = newAvatarUrl;
+    });
+
+    document.getElementById('change-banner').addEventListener('click', function(e) {
+        e.preventDefault();
+        const newBannerUrl = prompt('Enter new banner URL:', 'https://via.placeholder.com/1200x300');
+        if (newBannerUrl) document.getElementById('banner-img').src = newBannerUrl;
+    });
+
+    // Form submission (demo)
+    document.getElementById('profile-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const displayName = document.getElementById('display-name').value;
+        const bio = document.getElementById('bio').value;
+        const socialLinks = {
+            instagram: document.querySelector('.social-link:nth-child(1) input').value,
+            twitter: document.querySelector('.social-link:nth-child(2) input').value,
+            website: document.querySelector('.social-link:nth-child(3) input').value
+        };
+        console.log('Updated Profile:', { displayName, bio, socialLinks });
+        alert('Changes saved (demo)!');
+    });
+});
+    </script>
+</body>
+</html>

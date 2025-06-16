@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Start a return or exchange for your Redbubble order. Learn about our return policy, get shipping instructions, and track your return status.">
+    <title>Return Center | Pouchify</title>
+    
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Redbubble Return Center",
+      "description": "Process returns and exchanges for Redbubble products",
+      "url": "https://www.redbubble.com/returns",
+      "potentialAction": {
+        "@type": "ReturnAction",
+        "description": "Process return or exchange",
+        "returnMethod": "https://www.redbubble.com/returns"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="return_center.css">
+</head>
+<body>
+    <header class="article-header">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+               Return Center
+            </nav>
+            <h1>Pouchify Return Center</h1>
+            <p class="article-intro">Start a return or exchange for your order. Most items can be returned within 30 days of delivery.</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="return-content">
+            <aside class="return-sidebar" aria-labelledby="sidebar-heading">
+                <h2 id="sidebar-heading">Quick Links</h2>
+                <ul>
+                    <li><a href="#start-return">Start a Return</a></li>
+                    <li><a href="#policy">Return Policy</a></li>
+                    <li><a href="#track-return">Track Your Return</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                
+                <h2 style="margin-top: 2rem;">Return Status</h2>
+                <p style="font-size: 0.9rem;">Check the status of your recent returns:</p>
+                <div class="status-indicators" style="grid-template-columns: 1fr; margin: 1rem 0;">
+                    <div class="status-card processing">
+                        <h3>Processing</h3>
+                        <p>Return received, being inspected</p>
+                    </div>
+                    <div class="status-card shipped">
+                        <h3>In Transit</h3>
+                        <p>Return on its way to us</p>
+                    </div>
+                </div>
+            </aside>
+            
+            <div class="return-main">
+                <!-- Form Status Alert (hidden by default) -->
+                <div id="formAlert" class="callout" style="display: none;"></div>
+                
+                <section id="start-return">
+                    <h2>Start Your Return</h2>
+                    <p>Complete the form below to begin your return or exchange process.</p>
+                    
+                    <form id="returnForm" class="return-form">
+                        <div class="form-group">
+                            <label for="orderNumber" class="form-label required">Order Number</label>
+                            <input type="text" id="orderNumber" class="form-control" placeholder="RB-XXXX-XXXX" required>
+                            <p class="form-help">Find this in your order confirmation email</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label required">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="your@email.com" required>
+                            <p class="form-help">Must match the email used for the order</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="returnReason" class="form-label required">Reason for Return</label>
+                            <select id="returnReason" class="form-control form-select" required>
+                                <option value="" selected disabled>Select a reason</option>
+                                <option value="wrong-item">Wrong item received</option>
+                                <option value="damaged">Damaged or defective</option>
+                                <option value="not-as-described">Not as described</option>
+                                <option value="size">Wrong size</option>
+                                <option value="unwanted">No longer wanted</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="returnAction" class="form-label required">What would you like to do?</label>
+                            <select id="returnAction" class="form-control form-select" required>
+                                <option value="" selected disabled>Select an option</option>
+                                <option value="refund">Refund to original payment</option>
+                                <option value="exchange">Exchange for different item</option>
+                                <option value="store-credit">Store credit</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="returnNotes" class="form-label">Additional Notes</label>
+                            <textarea id="returnNotes" class="form-control" placeholder="Please provide any additional details about your return..."></textarea>
+                            <p class="form-help">For damaged items, please describe the issue</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="returnPhotos" class="form-label">Upload Photos</label>
+                            <input type="file" id="returnPhotos" class="form-control" accept="image/*" multiple>
+                            <p class="form-help">Required for damaged/defective items (max 5MB total)</p>
+                        </div>
+                        
+                        <div class="callout warning">
+                            <h3>Before You Submit</h3>
+                            <ul>
+                                <li>Original tags must still be attached</li>
+                                <li>Items must be unworn/unused</li>
+                                <li>Final sale items cannot be returned</li>
+                                <li>You'll receive shipping instructions after submission</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="form-group" style="margin-top: 2rem;">
+                            <button type="submit" class="btn btn-block">Start Return</button>
+                        </div>
+                    </form>
+                </section>
+                
+                <section id="policy">
+                    <h2>Return Policy</h2>
+                    <p>Our standard return policy:</p>
+                    
+                    <div class="status-indicators">
+                        <div class="status-card">
+                            <h3>Timeframe</h3>
+                            <p>30 days from delivery date</p>
+                        </div>
+                        <div class="status-card">
+                            <h3>Condition</h3>
+                            <p>Unused with original tags</p>
+                        </div>
+                        <div class="status-card">
+                            <h3>Refund Method</h3>
+                            <p>Original payment or store credit</p>
+                        </div>
+                    </div>
+                    
+                    <div class="callout alert">
+                        <h3>Non-Returnable Items</h3>
+                        <ul>
+                            <li>Final sale items (marked at purchase)</li>
+                            <li>Gift cards</li>
+                            <li>Used or damaged items</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>International Returns</h3>
+                    <p>Additional considerations for international orders:</p>
+                    <ul>
+                        <li>Return shipping costs are the customer's responsibility</li>
+                        <li>Allow 2-4 weeks for international transit</li>
+                        <li>Customs forms must be marked "Returned Goods"</li>
+                        <li>Declared value should match original purchase price</li>
+                    </ul>
+                </section>
+                
+                <section id="track-return">
+                    <h2>Track Your Return</h2>
+                    <p>After starting your return, you'll receive:</p>
+                    
+                    <div class="status-indicators">
+                        <div class="status-card shipped">
+                            <h3>Return Label</h3>
+                            <p>Email with shipping instructions within 24 hours</p>
+                        </div>
+                        <div class="status-card processing">
+                            <h3>Processing</h3>
+                            <p>2-5 business days after we receive your return</p>
+                        </div>
+                        <div class="status-card delivered">
+                            <h3>Refund Issued</h3>
+                            <p>Within 5 business days after approval</p>
+                        </div>
+                    </div>
+                    
+                    <div class="callout">
+                        <h3>Return Shipping</h3>
+                        <ul>
+                            <li><strong>US Customers:</strong> Prepaid label provided for defective/wrong items</li>
+                            <li><strong>International:</strong> Self-ship with tracking required</li>
+                            <li><strong>Exchanges:</strong> New item ships after return is received</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section id="faq" class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">How long does it take to receive my refund?</h3>
+                        <div class="faq-answer">
+                            <p>Refund processing times:</p>
+                            <ul>
+                                <li><strong>Credit cards:</strong> 5-10 business days after processing</li>
+                                <li><strong>PayPal:</strong> 3-5 business days</li>
+                                <li><strong>Bank transfer:</strong> 7-14 business days</li>
+                            </ul>
+                            <p>The timing depends on your financial institution. You'll receive an email when the refund is processed.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">What if I received a damaged or incorrect item?</h3>
+                        <div class="faq-answer">
+                            <p>For damaged/wrong items:</p>
+                            <ol>
+                                <li>Submit photos via the return form</li>
+                                <li>We'll email a prepaid return label (where available)</li>
+                                <li>Return the item within 14 days</li>
+                                <li>Receive replacement or refund</li>
+                            </ol>
+                            <p>In some cases, we may refund without requiring return of the damaged item.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Can I exchange for a different size/color?</h3>
+                        <div class="faq-answer">
+                            <p>Yes, exchanges are available for most items:</p>
+                            <ul>
+                                <li>Select "Exchange" on the return form</li>
+                                <li>Specify your preferred replacement</li>
+                                <li>Return the original item first</li>
+                                <li>New item ships after return is received</li>
+                            </ul>
+                            <p>If the replacement costs more, you'll pay the difference. If it costs less, you'll receive store credit.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">What if my return is past the 30-day window?</h3>
+                        <div class="faq-answer">
+                            <p>Options for late returns:</p>
+                            <ul>
+                                <li><strong>Store credit:</strong> May be offered at our discretion</li>
+                                <li><strong>Quality issues:</strong> We may accept late returns for defects</li>
+                                <li><strong>Special circumstances:</strong> Contact support for exceptions</li>
+                            </ul>
+                            <p>Standard refunds cannot be processed after 30 days.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <footer class="article-footer">
+                    
+                    <div class="related-articles">
+                        <h2>Popular Help Articles</h2>
+                        <ul>
+                            <li><a href="shipping_info_page.html">Shipping Information</a></li>
+                            <li><a href="order_status.html">Order Cancellations</a></li>
+                            <li><a href="payment_options.html">Payment Options</a></li>
+                            <li><a href="product_questions.html">Product Questions</a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        // Form submission with validation
+        document.addEventListener('DOMContentLoaded', function() {
+            const returnForm = document.getElementById('returnForm');
+            const formAlert = document.getElementById('formAlert');
+            
+            if (returnForm) {
+                returnForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Validate required fields
+                    const orderNumber = document.getElementById('orderNumber');
+                    const email = document.getElementById('email');
+                    const returnReason = document.getElementById('returnReason');
+                    const returnAction = document.getElementById('returnAction');
+                    
+                    let isValid = true;
+                    
+                    // Reset form styles
+                    [orderNumber, email, returnReason, returnAction].forEach(field => {
+                        field.style.borderColor = '';
+                    });
+                    
+                    // Validate fields
+                    if (!orderNumber.value) {
+                        orderNumber.style.borderColor = 'var(--error-color)';
+                        isValid = false;
+                    }
+                    
+                    if (!email.value || !/^\S+@\S+\.\S+$/.test(email.value)) {
+                        email.style.borderColor = 'var(--error-color)';
+                        isValid = false;
+                    }
+                    
+                    if (!returnReason.value) {
+                        returnReason.style.borderColor = 'var(--error-color)';
+                        isValid = false;
+                    }
+                    
+                    if (!returnAction.value) {
+                        returnAction.style.borderColor = 'var(--error-color)';
+                        isValid = false;
+                    }
+                    
+                    if (!isValid) {
+                        formAlert.textContent = 'Please fill in all required fields correctly.';
+                        formAlert.className = 'callout alert';
+                        formAlert.style.display = 'block';
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                        return;
+                    }
+                    
+                    // Simulate form submission
+                    formAlert.textContent = 'Your return request #RB-RET-2023-XXXX has been created! Check your email for shipping instructions.';
+                    formAlert.className = 'callout success';
+                    formAlert.style.display = 'block';
+                    
+                    // Reset form
+                    returnForm.reset();
+                    
+                    // Scroll to alert
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    
+                    // In a real implementation, you would send the form data to your backend here
+                    console.log('Return submitted:', {
+                        orderNumber: orderNumber.value,
+                        email: email.value,
+                        reason: returnReason.value,
+                        action: returnAction.value,
+                        notes: document.getElementById('returnNotes').value
+                    });
+                });
+            }
+            
+            // FAQ toggles
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const isExpanded = question.getAttribute('aria-expanded') === 'true';
+                    
+                    // Toggle visibility
+                    question.setAttribute('aria-expanded', !isExpanded);
+                    answer.style.display = isExpanded ? 'none' : 'block';
+                });
+                
+                // Initialize
+                question.setAttribute('aria-expanded', 'false');
+                question.nextElementSibling.style.display = 'none';
+                question.setAttribute('role', 'button');
+                question.setAttribute('tabindex', '0');
+            });
+            
+            // Add keyboard support for FAQ items
+            faqQuestions.forEach(question => {
+                question.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        question.click();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
